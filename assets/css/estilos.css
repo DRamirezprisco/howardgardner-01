@@ -281,7 +281,7 @@ main {
 
   .equipo {
     background: var(--primary-300-color);
-    background-image: url(/assets/img/bg-figuras.webp);
+    background-image: url(../img/bg-figuras.webp);
 
     .blobBoo {
       position: absolute;
@@ -390,7 +390,7 @@ main {
 
     .itemTestimonios {
       position: relative;
-      background-image: url(/assets/img/fotoFondoTestimonios.webp);
+      background-image: url(../img/fotoFondoTestimonios.webp);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -510,7 +510,7 @@ main {
 }
 
 footer {
-  background-image: url(/assets/img/bg-footer.webp);
+  background-image: url(../img/bg-footer.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
