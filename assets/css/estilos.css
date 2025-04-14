@@ -1,0 +1,575 @@
+:root {
+  --primary-color: #1f8e93;
+  --primary-300-color: #89e1e5;
+  --secundary-color: #00519f;
+  --accent-color: #f3752b;
+  --accent-700-color: #d45017;
+  --gray-color: #f0efeb;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*GLOBAL*/
+.myButton {
+  background-color: var(--accent-700-color);
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+  border: none;
+  font-weight: bold;
+
+  &:hover {
+    background-color: var(--accent-color);
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.titulopp {
+  font-family: "Rakkas";
+  font-size: 54px;
+  padding-top: 20px;
+}
+
+.subtitulo {
+  color: var(--secundary-color);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.parrafo {
+  width: 75%;
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  color: #444;
+}
+/*TERMINA GLOBAL*/
+
+header.home {
+  background: var(--primary-300-color);
+  background-image: url("../img/bg-figuras.webp");
+  height: 740px;
+  background-repeat: repeat;
+  background-size: contain;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+
+  .nubes {
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+    width: 110%;
+    z-index: -8;
+  }
+
+  .blancas {
+    z-index: -6;
+  }
+
+  nav {
+    z-index: 10;
+
+    img {
+      height: 120px;
+    }
+
+    #navbarSupportedContent {
+      margin-left: 50px;
+    }
+
+    .Button {
+      background-color: transparent;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 5px;
+      margin: 10px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: var(--accent-700-color);
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .blob {
+    position: absolute;
+    height: 480px;
+    rotate: -10deg;
+  }
+
+  .monster {
+    position: absolute;
+    height: 480px;
+    z-index: 10;
+  }
+
+  .subtitulo {
+    color: #d45017;
+    margin-top: 40px;
+  }
+}
+
+main {
+  section {
+    padding: 100px 0;
+    overflow: hidden;
+  }
+
+  .nosotros {
+    position: relative;
+
+    .blobAzul {
+      position: absolute;
+      height: 480px;
+      z-index: 30;
+      margin: 40px 0 0 -15px;
+    }
+
+    .sullivan {
+      position: absolute;
+      height: 530px;
+      z-index: 31;
+    }
+
+    .librosAnimados {
+      position: absolute;
+      height: 200px;
+      z-index: 50;
+      margin-top: 161px;
+      margin-left: 264px;
+    }
+
+    .tituloEquipo {
+      width: 80%;
+    }
+
+    .parrafo {
+      width: 95%;
+    }
+
+    .testimonio {
+      display: flex;
+      gap: 20px;
+
+      .icono {
+        display: flex;
+        gap: 10px;
+        height: 50px;
+        margin-bottom: 25px;
+
+        svg {
+          stroke: var(--primary-color);
+        }
+
+        p {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .service {
+    background: var(--gray-color);
+    position: relative;
+
+    .blobRandall {
+      position: absolute;
+      height: 250px;
+      right: -5px;
+    }
+
+    .Randall {
+      position: absolute;
+      z-index: 10;
+      height: 210px;
+      right: 0;
+    }
+
+    .tituloServicios {
+      margin-bottom: 40px;
+
+      .titulopp {
+        width: 60%;
+        margin: 0 auto;
+      }
+      .parrafo {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+
+    .itemServicios.blue {
+      .itemTexto {
+        .icono,
+        .button {
+          background-color: var(--secundary-color);
+        }
+      }
+    }
+
+    .itemServicios {
+      img {
+        width: 100%;
+        border-radius: 20px;
+        height: 260px;
+        object-fit: cover;
+      }
+
+      .itemTexto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -120px;
+        width: 80%;
+        background-color: white;
+        z-index: 10;
+        position: relative;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+
+        h3 {
+          font-size: 22px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          margin-top: 30px;
+
+          span {
+            font-size: 20px;
+            font-weight: normal;
+          }
+        }
+
+        .icono {
+          height: 80px;
+          width: 80px;
+          border-radius: 100%;
+          background-color: var(--primary-color);
+          top: -40px;
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .button {
+          height: 40px;
+          width: 50px;
+          border-radius: 10px;
+          background-color: var(--primary-color);
+          position: absolute;
+          bottom: -20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .equipo {
+    background: var(--primary-300-color);
+    background-image: url(/assets/img/bg-figuras.webp);
+
+    .blobBoo {
+      position: absolute;
+      height: 180px;
+      right: 0;
+    }
+
+    .niñaBoo {
+      position: absolute;
+      z-index: 10;
+      height: 230px;
+      right: 0;
+      top: -30px;
+    }
+
+    .tituloEquipo {
+      margin-bottom: 40px;
+
+      .parrafo {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    .itemEquipo {
+      background-color: var(--primary-color);
+      border-radius: 20px;
+      margin-top: 10px;
+      padding-left: 0;
+      padding-right: 0;
+      overflow: hidden;
+      height: 450px;
+      position: relative;
+      margin: 40px;
+
+      img {
+        position: absolute;
+        height: 75%;
+        top: 35px;
+      }
+
+      .cara {
+        height: 60%;
+      }
+
+      .itemTexto {
+        background-color: white;
+        padding: 30px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+
+        h3 {
+          font-size: 28px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          color: var(--accent-700-color);
+          font-weight: 500;
+          font-size: 25px;
+        }
+      }
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      filter: drop-shadow(1px 3px 0px black);
+    }
+  }
+
+  .testimonios {
+    .blobWazowski {
+      position: absolute;
+      height: 300px;
+      right: 170px;
+      margin-top: -99px;
+    }
+
+    .wazowski {
+      position: absolute;
+      z-index: 10;
+      height: 350px;
+      right: 197px;
+      rotate: 30deg;
+      margin-top: -125px;
+    }
+
+    .blobSullivan {
+      position: absolute;
+      height: 300px;
+      left: 175px;
+      z-index: -50;
+    }
+
+    .sullivan {
+      position: absolute;
+      z-index: 50;
+      height: 270px;
+      left: 148px;
+    }
+
+    .parrafo {
+      width: 100%;
+    }
+
+    .itemTestimonios {
+      position: relative;
+      background-image: url(/assets/img/fotoFondoTestimonios.webp);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 329px;
+
+      .itemTexto {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        img {
+          height: 130px;
+        }
+
+        h3 {
+          position: absolute;
+          font-size: 22px;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: white;
+          width: 50%;
+          text-align: left;
+        }
+
+        h2 {
+          color: var(--accent-700-color);
+          font-size: 18px;
+          font-weight: bold;
+          font-family: "Inter";
+          margin-top: 30px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        width: 56%;
+        margin: 0 auto;
+      }
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      filter: drop-shadow(1px 3px 0px black);
+    }
+  }
+
+  .callToAction {
+    background: linear-gradient(
+      to right,
+      var(--secundary-color),
+      var(--primary-color)
+    );
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+
+    .dibujo {
+      position: absolute;
+
+      .scott {
+        margin-block: 251px;
+        margin-left: -130px;
+        height: 200px;
+        z-index: 30;
+        position: relative;
+      }
+
+      .blodNaranja {
+        margin-bottom: -10px;
+        margin-left: -190px;
+        height: 206px;
+      }
+    }
+
+    .titulocallToAction {
+      position: relative;
+      img {
+        height: 200px;
+      }
+
+      h3 {
+        background: linear-gradient(
+          to right,
+          #229393,
+          #38c1c8 37%,
+          #f29f66 61%,
+          #f3752b
+        );
+        font-size: 45px;
+        font-family: "Rakkas";
+        margin-top: 30px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      h2 {
+        color: white;
+        font-size: 55px;
+        font-family: "Rakkas";
+        margin-top: 90px;
+      }
+
+      p {
+        font-size: 18px;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .sullivan {
+        height: 650px;
+        filter: drop-shadow(0px 8px 8px black);
+      }
+    }
+  }
+}
+
+footer {
+  background-image: url(/assets/img/bg-footer.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 0;
+
+  .row > div {
+    padding: 30px 50px;
+  }
+
+  .logo {
+    height: 150px;
+    margin-top: 50px;
+  }
+  .titulopp {
+    font-size: 24px;
+    font-family: "Rakkas";
+    color: var(--secundary-color);
+    margin: 0 auto;
+  }
+
+  .informacion {
+    background-color: rgb(240 239 235 / 50%);
+    border-radius: 20px;
+    height: 420px;
+    margin-top: 50px;
+  }
+  h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .parrafo {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .iconos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .mapa {
+    width: 100%;
+    height: 250px;
+    margin-top: 90px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  .diseno {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: white;
+  }
+}
